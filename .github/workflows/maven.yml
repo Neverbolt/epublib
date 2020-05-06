@@ -16,12 +16,12 @@ jobs:
     - name: Publish epublib-core
       run: |
           cd epublib-core \
-            && mvn publish
+            && mvn deploy
     - name: Publish epublib-parent
       run: |
           cd epublib-parent \
-            && mvn publish
+            && mvn deploy
     - name: Publish epublibtools-
       run: |
           cd epublib-tools \
-            && mvn publish
+            && mvn deploy
