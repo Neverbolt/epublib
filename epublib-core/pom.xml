@@ -117,11 +117,11 @@
             <url>https://maven.pkg.github.com/Neverbolt/epublib</url>
         </repository>
     </distributionManagement>
-    <!--<servers>
+    <servers>
         <server>
             <id>github</id>
-            <username></username>
-            <password></password>
+            <username>Neverbolt</username>
+            <password>${env.GH_TOKEN}</password>
         </server>
-    </servers>-->
+    </servers>
 </project>

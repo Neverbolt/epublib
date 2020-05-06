@@ -17,11 +17,9 @@ jobs:
       run: |
           cd epublib-core \
             && mvn deploy
-    - name: Publish epublib-parent
-      run: |
-          cd epublib-parent \
-            && mvn deploy
-    - name: Publish epublibtools-
+    - name: Publish epublib-tools
+      with:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
           cd epublib-tools \
             && mvn deploy
