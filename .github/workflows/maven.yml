@@ -16,10 +16,10 @@ jobs:
     - name: Publish epublib-core
       run: |
           cd epublib-core \
-            && export GH_TOKEN="${{ secrets.GITHUB_TOKEN }}
+            && export GH_TOKEN="${{ secrets.GITHUB_TOKEN }}" \
             && mvn deploy
     - name: Publish epublib-tools
       run: |
           cd epublib-tools \
-            && export GH_TOKEN="${{ secrets.GITHUB_TOKEN }}
+            && export GH_TOKEN="${{ secrets.GITHUB_TOKEN }}" \
             && mvn deploy
