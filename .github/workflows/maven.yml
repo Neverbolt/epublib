@@ -16,15 +16,15 @@ jobs:
     - name: Publish epublib-core
       run: |
           ls \
-          cd epublib-core \
-          mvn publish
+            && cd epublib-core \
+            && mvn publish
     - name: Publish epublib-parent
       run: |
           ls \
-          cd epublib-parent \
-          mvn publish
+            && cd epublib-parent \
+            && mvn publish
     - name: Publish epublibtools-
       run: |
           ls \
-          cd epublib-tools \
-          mvn publish
+            && cd epublib-tools \
+            && mvn publish
