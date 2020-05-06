@@ -15,16 +15,13 @@ jobs:
         java-version: 1.11
     - name: Publish epublib-core
       run: |
-          ls \
-            && cd epublib-core \
+          cd epublib-core \
             && mvn publish
     - name: Publish epublib-parent
       run: |
-          ls \
-            && cd epublib-parent \
+          cd epublib-parent \
             && mvn publish
     - name: Publish epublibtools-
       run: |
-          ls \
-            && cd epublib-tools \
+          cd epublib-tools \
             && mvn publish
