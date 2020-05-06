@@ -17,9 +17,9 @@ jobs:
       run: |
           cd epublib-core \
             && export GH_TOKEN="${{ secrets.GITHUB_TOKEN }}" \
-            && mvn --settings settings.xml deploy
+            && mvn -e --settings settings.xml deploy
     - name: Publish epublib-tools
       run: |
           cd epublib-tools \
             && export GH_TOKEN="${{ secrets.GITHUB_TOKEN }}" \
-            && mvn --settings settings.xml deploy
+            && mvn -e --settings settings.xml deploy
