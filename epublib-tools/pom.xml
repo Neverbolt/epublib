@@ -147,6 +147,14 @@
 		</pluginRepository>
 	</pluginRepositories>
 
+	<repositories>
+		<repository>
+            <id>github</id>
+            <name>GitHub Neverbolt Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Neverbolt/epublib</url>
+		</repository>
+	</repositories>
+
     <distributionManagement>
         <repository>
             <id>github</id>
