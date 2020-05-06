@@ -146,4 +146,12 @@
 			<url>http://onejar-maven-plugin.googlecode.com/svn/mavenrepo</url>
 		</pluginRepository>
 	</pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Neverbolt Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Neverbolt/epublib</url>
+        </repository>
+    </distributionManagement>
 </project>
