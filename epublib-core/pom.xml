@@ -76,6 +76,13 @@
 					<target>${target.version}</target>
 				</configuration>
 			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <javadocExecutable>/usr/bin/javadoc</javadocExecutable>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 	<reporting>
@@ -102,4 +109,19 @@
 			<url>http://download.java.net/maven/2/</url>
 		</repository>
 	</repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Neverbolt Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Neverbolt/epublib</url>
+        </repository>
+    </distributionManagement>
+    <!--<servers>
+        <server>
+            <id>github</id>
+            <username></username>
+            <password></password>
+        </server>
+    </servers>-->
 </project>
