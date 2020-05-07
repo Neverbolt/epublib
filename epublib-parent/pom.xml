@@ -177,6 +177,11 @@
 		</plugins>
 	</reporting>
 	<repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub Neverbolt Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Neverbolt/epublib</url>
+        </repository>
 		<repository>
 			<id>maven</id>
 			<url>https://repo1.maven.org/maven2/</url>
@@ -185,11 +190,6 @@
 			<id>jboss</id>
 			<url>https://repository.jboss.org/nexus/</url>
 		</repository>
-        <repository>
-            <id>github</id>
-            <name>GitHub Neverbolt Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Neverbolt/epublib</url>
-        </repository>
 	</repositories>
 
 </project>
